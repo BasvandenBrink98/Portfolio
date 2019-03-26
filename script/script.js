@@ -6,7 +6,6 @@ var workBtn = document.querySelector('#goToWork')
 console.log("onscroll",onScroll);
 
 
-
 var scrollPos = window.scrollY;
 
 
