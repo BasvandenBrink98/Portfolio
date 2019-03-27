@@ -92,10 +92,6 @@ nav>ul>li>a>p:nth-of-type(1):after{
   width: 5em;
 }
 
-#about{
-  color: #FFFFFF;
-}
-
 
 
 section:nth-of-type(1){
@@ -111,7 +107,6 @@ h1{
   left: 27%;
   font-size: 3em;
   letter-spacing: 0.35em;
-  /* color: #1D1944; */
   background: -webkit-linear-gradient(315deg, #1D1944, #6262C4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -330,7 +325,7 @@ h2{
   left: 95%;
   top: 83em;
   background-image: repeating-linear-gradient(
-      130deg,
+      135deg,
       transparent,
       transparent 5px,
       #252059 5px,
@@ -350,7 +345,90 @@ h2{
   z-index: -2;
 }
 
-#myWork{
+#art12{
+  width: 10em;
+  height: 10em;
+  position: absolute;
+  left: -1em;
+  top: 134em;
+  clip-path: polygon(0 0, 0 100%, 50% 50%);
+  background-color: #252059;
+  z-index: 1;
+}
+
+#art13{
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  left: -2em;
+  top: 133em;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  background-color: #1D1944;
+  z-index: 0;
+}
+
+#art14{
+  width:3em;
+  height: 6em;
+  position: absolute;
+  background-image:linear-gradient(45deg, #07060E 50%, rgba(0,0,0,0) 50%), linear-gradient(135deg, #FFEE1F 50%, rgba(0,0,0,0) 50%);
+  background-size:100% 50%;
+  background-position:left top, left bottom;
+  background-repeat:no-repeat;
+  left: 1em;
+  top: 138em;
+  z-index: 2;
+}
+
+#art15{
+  width: 12em;
+  height: 12em;
+  position: absolute;
+  background-image: repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 5px,
+      #07060E 5px,
+      #07060E 10px);
+  border-radius: 100%;
+  left: -8em;
+  top: 129em;
+  z-index: -1;
+}
+
+#art16{
+  width: 7em;
+  height: 7em;
+  position: absolute;
+  left: -5em;
+  top: 140em;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  background-color: #07060E;
+  z-index: -1;
+}
+
+#art17{
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  left: -2em;
+  top: 145.5em;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  background-color: #FFEE1F;
+  z-index: -2;
+}
+
+h3{
+  text-align: center;
+  color: #6262C4;
+  font-weight: 450;
+}
+
+h3:nth-of-type(2){
+  margin-top: 4em;
+}
+
+.myWork{
   display: grid;
   grid-template-columns: auto 25% 25% 25% 9%;
   grid-template-rows: 33.5em 33.5em 33.5em 33.5em;
@@ -358,10 +436,13 @@ h2{
   grid-column-gap: 2em;
   list-style: none;
   overflow: hidden;
-
 }
 
-#myWork>li{
+.myWork:nth-of-type(2){
+  grid-template-rows: 33.5em;
+}
+
+.myWork>li{
   padding: 1.5em;
   box-shadow: 0px 0px 23px 0px rgba(199,199,199,1);
   overflow: hidden;
@@ -374,14 +455,14 @@ h2{
   overflow: hidden;
 }
 
-#myWork>li:nth-of-type(1){
+.myWork>li:nth-of-type(1){
   grid-column-start: 2;
   grid-column-end: auto;
   grid-row-start: 1;
   grid-row-end: auto;
 }
 
-#myWork>li:nth-of-type(2){
+.myWork>li:nth-of-type(2){
   grid-column-start: 3;
   grid-column-end: auto;
   grid-row-start: 1;
@@ -389,7 +470,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(3){
+.myWork>li:nth-of-type(3){
   grid-column-start: 4;
   grid-column-end: auto;
   grid-row-start: 1;
@@ -397,7 +478,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(4){
+.myWork>li:nth-of-type(4){
   grid-column-start: 2;
   grid-column-end: auto;
   grid-row-start: 2;
@@ -405,7 +486,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(5){
+.myWork>li:nth-of-type(5){
   grid-column-start: 3;
   grid-column-end: auto;
   grid-row-start: 2;
@@ -413,7 +494,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(6){
+.myWork>li:nth-of-type(6){
   grid-column-start: 4;
   grid-column-end: auto;
   grid-row-start: 2;
@@ -421,7 +502,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(7){
+.myWork>li:nth-of-type(7){
   grid-column-start: 2;
   grid-column-end: auto;
   grid-row-start: 3;
@@ -429,7 +510,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(8){
+.myWork>li:nth-of-type(8){
   grid-column-start: 3;
   grid-column-end: auto;
   grid-row-start: 3;
@@ -437,7 +518,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(9){
+.myWork>li:nth-of-type(9){
   grid-column-start: 4;
   grid-column-end: auto;
   grid-row-start: 3;
@@ -445,7 +526,7 @@ h2{
 
 }
 
-#myWork>li:nth-of-type(10){
+.myWork>li:nth-of-type(10){
   grid-column-start: 2;
   grid-column-end: auto;
   grid-row-start: 4;
@@ -459,22 +540,26 @@ li > div > a > img{
   /* margin: 0 25% 0 25%; */
 }
 
+#nemo2{
+  margin-top: 3em;
+}
+
+#boemelThumb{
+  margin-top: 7em;
+}
+
+
+
 li>p{
   text-align: center;
   font-size: 1.2em;
   font-weight: 500;
-
-}
-
-#footer{
-    background-color: #1D1944;
 }
 
 
 #footer > ul{
   list-style: none;
   height: 4em;
-  border-top: solid #6B6B6B 1px;
   margin-bottom: 0;
   display: grid;
   grid-template-columns: 20% 60% 5% 5% 5% 5%;
@@ -487,7 +572,7 @@ li>p{
   text-align: center;
   margin-top: 1.25em;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #6B6B6B;
 }
 
 #footer > ul > li:nth-of-type(2){
