@@ -290,10 +290,58 @@ section:nth-of-type(2){
     height: auto;
 }
 
-h2{
+#workStart{
   text-align: center;
   padding-top: 3em;
   color: #1D1944;
+}
+
+#aboutMe{
+  display: block;
+  margin: auto 0;
+  width: 100%;
+  padding: 16.5em 0;
+}
+
+#container2{
+  display: block;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto auto;
+}
+
+#hoofd2{
+  width: 18em;
+  height: auto;
+  grid-column-start: 1;
+  grid-column-end: auto;
+  margin: auto;
+  margin-right: 4em;
+}
+
+#container2 > div{
+  grid-column-start: 2;
+  grid-column-end: auto;
+  padding-top: 4em;
+}
+
+#container2 > div > h2{
+  grid-column-start: 2;
+  grid-column-end: auto;
+  margin: auto;
+  margin-left: 2em;
+  padding-bottom: 1em;
+  font-weight: 600;
+  color: #1D1944;
+
+}
+
+#container2 > div > p{
+  width: 27em;
+  color: #1D1944;
+  margin: auto;
+  margin-left: 3em;
 }
 
 #art8{
