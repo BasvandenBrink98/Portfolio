@@ -312,7 +312,7 @@ section:nth-of-type(2){
 }
 
 #hoofd2{
-  width: 18em;
+  width: 20em;
   height: auto;
   grid-column-start: 1;
   grid-column-end: auto;
@@ -323,7 +323,7 @@ section:nth-of-type(2){
 #container2 > div{
   grid-column-start: 2;
   grid-column-end: auto;
-  padding-top: 4em;
+  padding-top: 6em;
 }
 
 #container2 > div > h2{
@@ -595,7 +595,6 @@ li > div > a > img{
 #boemelThumb{
   margin-top: 7em;
 }
-
 
 
 li>p{
