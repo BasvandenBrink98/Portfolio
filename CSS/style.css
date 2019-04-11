@@ -582,6 +582,13 @@ h3:nth-of-type(2){
 
 }
 
+.myWork>li:nth-of-type(11){
+  grid-column-start: 3;
+  grid-column-end: auto;
+  grid-row-start: 4;
+  grid-row-end: auto;
+}
+
 li > div > a > img{
   max-width: 100%;
   max-height: auto;
