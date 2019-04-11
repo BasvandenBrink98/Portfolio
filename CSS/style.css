@@ -294,6 +294,9 @@ section:nth-of-type(2){
   text-align: center;
   padding-top: 3em;
   color: #1D1944;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  font-weight: 600;
 }
 
 #aboutMe{
@@ -333,6 +336,8 @@ section:nth-of-type(2){
   margin-left: 2em;
   padding-bottom: 1em;
   font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: lowercase;
   color: #1D1944;
 
 }
@@ -470,6 +475,7 @@ h3{
   text-align: center;
   color: #6262C4;
   font-weight: 450;
+  text-transform: lowercase;
 }
 
 h3:nth-of-type(2){
@@ -582,12 +588,6 @@ h3:nth-of-type(2){
 
 }
 
-#srp{
-  grid-column-start: 3;
-  grid-column-end: auto;
-  grid-row-start: 4;
-  grid-row-end: auto;
-}
 
 li > div > a > img{
   max-width: 100%;
@@ -603,6 +603,9 @@ li > div > a > img{
   margin-top: 7em;
 }
 
+#srpCss{
+  margin-top: 3em;
+}
 
 li>p{
   text-align: center;
