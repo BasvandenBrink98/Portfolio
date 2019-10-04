@@ -6,39 +6,46 @@
     <link href="CSS/style.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="topPage"  id="navBar">
-    <ul id="navList">
-      <li id="goToWork">
-        <a href="#workStart">
-          <p  class="hovBorder">my work</p>
-        </a>
-      </li>
-      <li>
-        <a href="#aboutMe">
-          <p  class="hovBorder" id="about">about me</p>
-        </a>
-      </li>
-      <li>
-        <p>Bas van den Brink</p>
-      </li>
+  <header>
+    <nav class="topPage"  id="navBar">
+      <ul id="navList">
+        <li id="goToWork">
+          <a href="#workStart">
+            <p  class="hovBorder">my work</p>
+          </a>
+        </li>
+        <li>
+          <a href="#aboutMe">
+            <p  class="hovBorder" id="about">about me</p>
+          </a>
+        </li>
+        <li>
+          <p id="naam">Bas van den Brink</p>
+        </li>
+      </ul>
     </nav>
+  <header>
   <section id="me">
     <h1 id="bas">Bas van den Brink</h1>
     <div id="nameBorder"></div>
     <p id="subTitle">Communication and Multimedia Design student</p>
     <img id="hoofd"  src="images/ik.png" alt="foto of me">
-    <div id="hoofdAdd"></div>
-    <div id="hoofdAdd2"></div>
-    <div id="hoofdAdd3"></div>
-    <div id="hoofdAdd4"></div>
-    <div id="hoofdAdd5"></div>
-    <div id="art1"></div>
-    <div id="art2"></div>
-    <div id="art3"></div>
-    <div id="art4"></div>
-    <div id="art5"></div>
-    <div id="art6"></div>
-    <div id="art7"></div>
+    <div id="artCluster1">
+      <div id="hoofdAdd"></div>
+      <div id="hoofdAdd2"></div>
+      <div id="hoofdAdd3"></div>
+      <div id="hoofdAdd4"></div>
+      <div id="hoofdAdd5"></div>
+    </div>
+    <div id="artCluster2">
+      <div id="art1"></div>
+      <div id="art2"></div>
+      <div id="art3"></div>
+      <div id="art4"></div>
+      <div id="art5"></div>
+      <div id="art6"></div>
+      <div id="art7"></div>
+    </div>
   </section>
   <section id="aboutMe">
     <div id="container2">
@@ -57,23 +64,25 @@
   <section id="work">
     <h2 id="workStart">My work</h2>
     <h3>School</h3>
-    <div id="art8"></div>
-    <div id="art9"></div>
-    <div id="art10"></div>
-    <div id="art11"></div>
+    <div id="artCluster3">
+      <div id="art8"></div>
+      <div id="art9"></div>
+      <div id="art10"></div>
+      <div id="art11"></div>
+    </div>
     <ul class="myWork">
       <li>
         <div class="container">
           <a href="bestanden/Artiest poster - Greta van Fleet.png" target="_blank">
-            <img src="images/Artiest poster - Greta van Fleet.png" alt="poster">
+            <div class="imgContainer" id="myWork1"></div>
           </a>
         </div>
         <p>Melkweg artiest poster (Greta van Fleet)</p>
       </li>
       <li>
         <div class="container">
-          <a href="file:///C:/Users/Bas%20van%20den%20Brink/Documents/JAAR%202/SRP%20CSS/index.html">
-            <img id="srpCss" src="images/srp css thumbnail.png" alt="css training">
+          <a href="file:///C:/Users/basvd/OneDrive/Documenten/SCHOOL/JAAR%202/SRP%20CSS/index.html">
+            <div id="myWork2"></div>
           </a>
         </div>
         <p>CSS training</p>
@@ -81,7 +90,7 @@
       <li>
         <div class="container">
           <a href="bestanden/home-scherm-experience-v2.png" target="_blank">
-            <img src="images/home-scherm-experience-v2.png" alt="home-scherm">
+            <div class="imgContainer" id="myWork3"></div>
           </a>
         </div>
         <p>Experience intro homescherm</p>
@@ -89,7 +98,7 @@
       <li>
         <div class="container">
           <a href="bestanden/Melkweg poster.png" target="_blank">
-            <img src="images/Melkweg poster.png" alt="MelkwegPoster">
+            <div class="imgContainer" id="myWork4"></div>
           </a>
         </div>
         <p>Melkweg maand planning</p>
@@ -97,7 +106,7 @@
       <li>
         <div class="container">
           <a href="bestanden/agenda herontwerp-02.png" target="_blank">
-            <img src="images/agenda herontwerp-02.png" alt="Agenda">
+            <div class="imgContainer" id="myWork5"></div>
           </a>
         </div>
         <p>Melkweg mobile agenda</p>
@@ -105,7 +114,7 @@
       <li>
         <div class="container">
           <a href="https://invis.io/Q6B14540785THW">
-            <img src="images/OBA.png" alt="OBA">
+            <div class="imgContainer" id="myWork6"></div>
           </a>
         </div>
         <p>OBA For You</p>
@@ -113,31 +122,23 @@
       <li>
         <div class="container">
           <a href="https://xd.adobe.com/view/f4b9405b-9a17-4965-802b-9a18b05f22f1">
-            <img src="images/Trail Together.png" alt="TrailTogether">
+            <div class="imgContainer" id="myWork7"></div>
           </a>
         </div>
         <p>Trail Together</p>
       </li>
       <li>
         <div class="container">
-          <a href="bestanden/Nemo concept 1.png" target="_blank">
-            <img src="images/Nemo1.png" alt="NEMO logo">
+          <a href="bestanden/Nemo concepten.png" target="_blank">
+            <div class="imgContainer" id="myWork8"></div>
           </a>
         </div>
-        <p>Logo NEMO science museum - Concept 1</p>
-      </li>
-      <li>
-        <div class="container">
-          <a href="bestanden/Nemo concept 2.png" target="_blank">
-            <img id="nemo2" src="images/Nemo2.png" alt="NEMO logo">
-          </a>
-        </div>
-        <p>Logo NEMO science museum - Concept 2</p>
+        <p>Logo's NEMO science museum</p>
       </li>
       <li>
         <div class="container">
           <a href="bestanden/UCD poster.png" target="_blank">
-            <img src="images/UCD poster.png" alt="UCD poster">
+            <div class="imgContainer" id="myWork9"></div>
           </a>
         </div>
         <p>MAAS User Interface verbetering</p>
@@ -154,7 +155,7 @@
       <li>
         <div class="container">
           <a href="bestanden/Hekwerkbanner.png" target="_blank">
-            <img src="images/Thumbnail HvA.png" alt="HvA Line-up">
+            <div class="imgContainer" id="myWork10"></div>
           </a>
         </div>
         <p>Intro feest HvA line-up</p>
@@ -162,10 +163,35 @@
       <li>
         <div class="container">
           <a href="bestanden/Cafe de boemel.png" target="_blank">
-            <img id="boemelThumb" src="images/Boemel.png" alt="De Boemel snapchat">
+            <div class="imgContainer" id="myWork11"></div>
+            <!-- <img id="boemelThumb" src="images/Boemel.png" alt="De Boemel snapchat"> -->
           </a>
         </div>
         <p>Snapchat geofilters café de Boemel</p>
+      </li>
+      <li>
+        <div class="container">
+          <a href="bestanden/KoningsdagPoster.png" target="_blank">
+            <div class="imgContainer" id="myWork12"></div>
+          </a>
+        </div>
+        <p>Koningsdag poster voor Murphy's</p>
+      </li>
+      <li>
+        <div class="container">
+          <a href="bestanden/BeachPartyPoster.png" target="_blank">
+            <div class="imgContainer" id="myWork13"></div>
+          </a>
+        </div>
+        <p>Beach party voor Murphy's</p>
+      </li>
+      <li>
+        <div class="container">
+          <a href="https://vimeo.com/345704175" target="_blank">
+            <div class="imgContainer" id="myWork14"></div>
+          </a>
+        </div>
+        <p>Animatie video</p>
       </li>
     </ul>
   </section>
