@@ -1,0 +1,944 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Montserrat", serif;
+    
+}
+
+h1{
+    margin-left: 1.3em;
+    margin-top: 10em;
+    margin-bottom: 0.7em;
+    color: #003333;
+    font-size: 1.5em;
+}
+
+h2{
+    margin-left: 2em;
+    color: #368185;
+    font-size: 1em;
+
+}
+
+
+.container{
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+#driehoek1{
+    width: 0em;
+    height: 0em;
+    border-top: 1em solid transparent;
+    border-right: 1em solid #F5C729;
+    border-bottom: 1em solid transparent;
+    position: absolute;
+    top: 1.5em;
+    left: 33.5em;
+    
+}
+
+#driehoek1.expand{
+    animation: change1 4s ease forwards;
+}
+
+@keyframes change1{
+    0%{
+        border-radius: 0%;
+    }
+    20%{
+        border-radius: 40%;
+        transform: scale(4) translate(0,2em);
+    }
+    50%{
+        border-radius: -30%;
+        transform: scale(2);
+        border-right-color: #368185;
+        
+    }
+    70%{
+        border-radius: 60%;
+        border-right-color: #F5C729;
+    }
+    85%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 100%;
+        transform: scale(6) translate(0,3.4em) rotate(90deg);
+    }
+    
+}
+
+#driehoek2{
+    width: 64em;
+    height: 48em;
+    clip-path: polygon(30% 100%, 100% 50%, 100% 100%);
+    background-color: #368185;
+    position: absolute;
+    bottom: -1.1em;
+    right: 0em;
+    z-index: 1;
+    
+}
+
+#driehoek3{
+    width: 22em;
+    height: 22em;
+    background-image: repeating-linear-gradient(
+        45deg, 
+        transparent, 
+        transparent 5px,
+        black 5px,
+        black 10px);
+    clip-path: polygon(50% 0%, 0 50%, 50% 100%);
+    position: absolute;
+    left: 34em;
+    top: 9em;
+    z-index: 2
+}
+
+#driehoek3.expand{
+    animation: move3 3s ease forwards;
+
+}
+
+@keyframes move3{
+    0%{
+        transform: translate(0,0);
+    }
+    30%{
+        transform: translate(3em,2em) rotate(20deg);
+    }
+    60%{
+        transform: translate(-4em,-3em) scale(4) rotate(563deg);
+    }
+    100%{
+        transform: translate(-5em,8.4em) rotate(180deg);
+        background-image: repeating-linear-gradient(
+        90deg, 
+        transparent, 
+        transparent 5px,
+        #003333 5px,
+        #003333 10px);
+        width: 5em;
+        height: 5em;
+    }
+}
+
+#driehoek4{
+    width: 15em;
+    height: 30em;
+    background-image:linear-gradient(315deg, #FFCC33 50%, rgba(0,0,0,0) 50%), linear-gradient(225deg, #FFCC00 50%, rgba(0,0,0,0) 50%);
+    background-size:100% 50%;
+    background-position:left top, left bottom;
+    background-repeat:no-repeat;
+    position: absolute;
+    left: 32.9em;
+    bottom: -3.3em;
+    z-index: 2;
+
+}
+
+#driehoek4.expand{
+    animation: move 3s ease forwards;
+    
+
+}
+
+@keyframes move{
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(0,5em);
+    }
+    100%{
+        transform: translate(0,50em);
+    }
+    
+}
+
+#secondColor1{
+    width: 27em;
+    height: 21.3em;
+    clip-path: polygon(63% 100%, 100% 100%, 115% 0);
+    background-color: #FFCC00;
+    position: absolute;
+    bottom: 14.7em;
+    right: 0em;
+    z-index: 3;    
+        
+}
+
+#driehoek5{
+    width: 20em;
+    height: 20em;
+    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+    background-color: #339999;
+    position: absolute;
+    bottom: 1.7em;
+    left: 26.5em;
+    z-index: 1;
+    animation: spin 3s linear infinite;
+    animation-play-state: paused;
+    
+}
+
+#driehoek5.expand{
+    animation-play-state: running;
+    animation: spin 3s ease forwards;
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+#secondColor2{
+    width: 20em;
+    height: 20em;
+    clip-path: polygon(50% 0%, 15% 65%, 50% 100%);
+    background-color: #368185;
+    position: absolute;
+    top: 0em;
+    
+}
+
+#driehoek6{
+    width: 9em;
+    height: 9em;
+    background-image: repeating-linear-gradient(
+        45deg, 
+        black,
+        black 10px,
+        transparent 7px, 
+        transparent 17px);
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    position: absolute;
+    right: 12.5em;
+    bottom: 1.5em;
+    z-index: 3;
+    animation-play-state: paused;
+}
+
+#driehoek6.expand{
+    animation: expand 2s ease forwards;
+    animation-play-state: running;
+}
+
+@keyframes expand{
+
+    100%{
+        transform: scale(4);
+    }
+}
+
+
+#driehoek7{
+    width: 3em;
+    height: 6em;
+    overflow-x: hidden;
+    background-image:linear-gradient(315deg, #368185 50%, rgba(0,0,0,0) 50%), linear-gradient(225deg, #003333 50%, rgba(0,0,0,0) 50%);
+    background-size:100% 50%;
+    background-position:left top, left bottom;
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 7em;
+    left: 31em;
+}
+
+#driehoek7.expand{
+    animation: move2 1.5s ease forwards;
+}
+
+@keyframes move2{
+    10%{
+        transform: translate(5em, 0);
+    }
+    
+    100%{
+        transform: translate(-40em, 0);
+    }
+}
+
+
+#driehoek8{
+    width: 3em;
+    height: 6em;
+    background-image:linear-gradient(315deg, #368185 50%, rgba(0,0,0,0) 50%), linear-gradient(225deg, #003333 50%, rgba(0,0,0,0) 50%);
+    background-size:100% 50%;
+    background-position:left top, left bottom;
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 7em;
+    left: 35em;
+    
+}
+
+#driehoek8.expand{
+    animation: move4 1.6s ease forwards;
+}
+
+@keyframes move4{
+    14%{
+        transform: translate(5em, 0);
+    }
+    15%{
+        animation-delay: 0.5s;
+    }
+    100%{
+        transform: translate(-40em, 0);
+    }
+}
+
+#driehoek9{
+    width: 5em;
+    height: 5em;
+    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+    background-color: #368185;
+    position: absolute;
+    bottom: 17em;
+    left: 27em; 
+    
+}
+
+#driehoek9.expand{
+    animation: change2 2s ease forwards;
+    
+}
+
+@keyframes change2{
+    0%{
+        background-color: #368185;
+    }
+    
+    100%{
+        background-color: #FFCC00;
+    }
+}
+
+#driehoek10{
+    width: 2.5em;
+    height: 2.5em;
+    clip-path: polygon(100% 0, 50% 50%, 100% 100%);
+    background-color: #368185;
+    position: absolute;
+    top: 18em;
+    left: 28em;
+    
+}
+
+#driehoek10.expand{
+    animation: move5 5s ease forwards;
+    
+}
+
+@keyframes move5{
+    0%{
+        transform: none;
+    }
+    10%{
+        transform: scale(2);
+
+    }
+    30%{
+        transform: translate(1em,-0.5em) rotate(-135deg) scale(2);
+        transform-origin: 100% 0 0;
+        background-color: #FFCC00; 
+    }
+    60%{
+        transform: translate(11em,-0.5em) scale(2);
+        background-color: #FFCC00;
+    }
+    100%{
+        transform: translate(10.8em, 0.4em) rotate(315deg) scale(2);
+        transform-origin: 0 100% 0;
+        background-color: #FFCC00;
+        
+    }
+}
+
+#driehoek11{
+    width: 35em;
+    height: 35em;
+    clip-path: polygon(105% 0, 0 77%, 0 0);
+    background-color: #FFCC00;
+    position: absolute;
+    bottom: -10em;
+    right: -0em;
+    z-index: 2;
+    
+}
+
+#driehoek12{
+    width: 35em;
+    height: 38.1em;
+    clip-path: polygon(100% 102%, 0 102%, 100% 0);
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 11.6em;
+    right: 16.5em;
+    z-index: 4;
+    
+}
+
+#secondColor3{
+    width: 21em;
+    height: 21em;
+    clip-path:polygon(50% 0%, 0 50%, 50% 100%);
+    background-color: #FFF8E4;
+    position: absolute;
+    top: 0em;
+    right: -10.5em;
+    
+}
+
+#driehoek13{
+    width: 8em;
+    height: 8em;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+    background-color: #000000;
+    position: absolute;
+    bottom: 3.6em;
+    left: 45.2em;
+    z-index: 5;
+}
+
+#driehoek14{
+    width: 65em;
+    height: 65em;
+    background-image: repeating-linear-gradient(
+        135deg, 
+        #CCCCCB,
+        #CCCCCB 8px,
+        transparent 7px, 
+        transparent 17px);
+    clip-path: polygon(87% 0, 100% 45%, 58% 129%, 0 75%);
+    position: absolute;
+    bottom: -3em;
+    right: -21em;
+    z-index: 0;
+    
+}
+
+#driehoek15{
+    width: 18em;
+    height: 18em;
+    clip-path: polygon(50% 52%, 0% 103%, 100% 103%);
+    background-color: #FFCC00;
+    box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.7);
+    transform: rotate(315deg);
+    position: absolute;
+    bottom: 16em;
+    right: 26em;
+    z-index: 7;
+}
+
+#driehoek16{
+    width: 14em;
+    height: 14em;
+    clip-path: polygon(50% 52%, 0% 103%, 100% 103%);
+    background-color: #FBE9B7;
+    box-shadow: 0px 2px 14px -1px rgba(0,0,0,0.7);
+    transform: rotate(315deg);
+    position: absolute;
+    bottom: 19.8em;
+    right: 30.4em;
+    z-index: 8;
+    
+}
+
+#driehoek17{
+    width: 3.4em;
+    height: 3.4em;
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    background-color: #368185;
+    position: absolute;
+    bottom: 15em;
+    right: 34em;
+    z-index: 9;
+    
+}
+
+#driehoek18{
+    width: 15.8em;
+    height: 15.4em;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    background-color: #FFCC00;
+    position: absolute;
+    bottom: 13em;
+    left: 44.7em;
+    z-index: 2;
+    
+}
+
+#driehoek19{
+    width: 9.5em;
+    height: 9.5em;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background-image: repeating-linear-gradient(
+        135deg, 
+        #635741,
+        #635741 8px,
+        transparent 7px, 
+        transparent 17px);
+    position: absolute;
+    bottom: 17.1em;
+    right: 37.4em;
+    z-index: 1; 
+    
+}
+
+#driehoek20{
+    width: 1.5em;
+    height: 1.5em;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: #FFCC00;
+    position: absolute;
+    bottom: 13em;
+    right: 18em;
+    z-index: 10;
+}
+
+#driehoek20.expand{
+    animation: move7 4s ease forwards;
+    
+}
+
+@keyframes move7{
+    0%{
+        transform: none;
+    }
+    20%{
+        transform: translate(-40em, -2em) rotate(720deg);
+    }
+    60%{
+        transform: translate(-35em, -25em);
+    }
+    100%{
+        transform: translate(-37.7em,-15.25em) rotate(180deg);
+        background-color: #003333;
+    }
+}
+
+#driehoek21{
+    width: 17em;
+    height: 17em;
+    clip-path: polygon(13% 0, 0 106%, 106% 106%);
+    background-color: #368185;
+    box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.7);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 6.2em;
+    right: -8.2em;
+    z-index: 4;
+    
+}
+
+#driehoek22{
+    width: 10em;
+    height: 10em;
+    clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+    background-color: #368185;
+    position: absolute;
+    bottom: 14em;
+    right: 7em;
+    z-index: 5;
+}
+
+#driehoek23{
+    width: 6em;
+    height: 3em;
+    overflow-x: hidden;
+    background-image:linear-gradient(315deg, #003333 50%, rgba(0,0,0,0) 50%), linear-gradient(45deg, #396060 50%, rgba(0,0,0,0) 50%);
+    background-size:50% 100%;
+    background-position:left top, right top;
+    background-repeat:no-repeat;
+    position: absolute;
+    bottom: 12.5em;
+    right: 9em;
+    z-index: 6;
+    
+}
+
+#driehoek24{
+    width: 28em;
+    height: 28em;
+    clip-path: polygon(0 0, 0 103%, 100% 103%);
+    background-color: #FFCC33;
+    box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.7);
+    position: absolute;
+    top: -9em;
+    right: 10em;
+    z-index: 5;
+    overflow: hidden;
+    
+}
+
+#secondColor4{
+    width: 21.5em;
+    height: 21.5em;
+    clip-path: polygon(37% 8%, 111% 79%, 98% 114%, 0 108%, -14% 67%);
+    background-color: #FFCC00;
+    position: absolute;
+    bottom: 0em;
+    left: 0em;
+    
+}
+
+#thirdColor1{
+    width: 21em;
+    height: 25em;
+    clip-path: polygon(0 107%, 4% 29%, 45% 26%, 44% 107%);
+    background-color: #FFCC00;
+    box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.7);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 0em;
+    left: 5.7em;
+}
+
+#driehoek25{
+    width: 15em;
+    height: 15em;
+    clip-path: polygon(0 0, 0 106%, 106% 106%);
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.7);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 6.9em;
+    right: 13.5em;
+    z-index: 6;
+    
+}
+
+#driehoek26{
+    width: 6em;
+    height: 3em;
+    overflow-x: hidden;
+    background-image:linear-gradient(315deg, #003333 50%, rgba(0,0,0,0) 50%), linear-gradient(45deg, #396060 50%, rgba(0,0,0,0) 50%);
+    background-size:50% 100%;
+    background-position:left top, right top;
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 14.8em;
+    right: 17em;
+    z-index: 10;
+}
+
+#driehoek27{
+    width: 10em;
+    height: 10em;
+    clip-path: polygon(50% 0%, 0 49%, 100% 50%);
+    background-color: #003333;
+    position: absolute;
+    top: 17em;
+    right: 15em;
+    z-index: 9;
+}
+
+#driehoek28{
+    width: 3em;
+    height: 3em;
+    clip-path: polygon(50% 0%, 0 49%, 100% 50%);
+    background-color: #396060;
+    position: absolute;
+    top: 18.5em;
+    right: 18.5em;
+    z-index: 10;
+    
+}
+
+#driehoek29{
+    width: 20em;
+    height: 20em;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
+    background-color: #A7C1BE;
+    position: absolute;
+    top: 0.75em;
+    right: 6.5em;
+    z-index: 3;
+}
+
+#secondColor5{
+    width: 20em;
+    height: 20em;
+    clip-path: polygon(0 53%, 16% 17%, 50% 50%, 0 100%);
+    overflow: hidden;
+    background-image: linear-gradient(135deg, #9EBFC7 20%, #396060 80%);
+    position: absolute;
+    bottom: 0em;
+    left: 10em;
+    
+    
+}
+
+#driehoek30{
+    width: 6.55em;
+    height: 7.55em;
+    clip-path: polygon(26% 0, 100% 0, 100% 50%, 78% 50%);
+    background-image: repeating-linear-gradient(
+        135deg, 
+        #CCCCCB,
+        #CCCCCB 8px,
+        transparent 7px, 
+        transparent 17px);
+    position: absolute;
+    top: 18.3em;
+    right: 16.5em;
+    z-index: 4;
+}
+
+#driehoek31{
+    width: 11em;
+    height: 11em;
+    clip-path: polygon(50% 0, 100% 50%, 0 50%);
+    background-image: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 3px,
+        transparent 5px,
+        transparent 8px);
+    position: absolute;
+    bottom: 14em;
+    right: 9em;
+    z-index: 8;
+        
+}
+
+#driehoek32{
+    width: 4em;
+    height: 8em;
+    background-image: linear-gradient(135deg, transparent 50%, #313432 50%),
+    linear-gradient(45deg, transparent 50%, #000000 50%);
+    background-size: 100% 50.1%;
+    background-position: left top, left bottom;
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7em;
+    right: 33em;
+    z-index: 8;
+    
+}
+
+#driehoek33{
+    width: 12.8em;
+    height: 13.3em;
+    clip-path: polygon(47% 0, 100% 50%, 0 50%);
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 24.4em;
+    top: 14em;
+    z-index: 5;
+}
+
+#driehoek34{
+    width: 3em;
+    height: 3em;
+    clip-path: polygon(50% 0, 100% 50%, 0 50%);
+    background-color: #FFCC00;
+    position: absolute;
+    top: 16em;
+    right: 28em;
+    z-index: 5;
+}
+
+#driehoek35{
+    width: 29em;
+    height: 29em;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: #FBE9B7;
+    position: absolute;
+    top: 5em;
+    right: 18em;
+    z-index: 0;
+}
+
+#driehoek36{
+    width: 8em;
+    height: 8em;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: #FBE9B7;
+    position: absolute;
+    top: 5em;
+    right: 18em;
+    z-index: 4;
+}
+
+#driehoek37{
+    width: 3em;
+    height: 6em;
+    background-image: linear-gradient(135deg, transparent 50%, #365F67 50%),
+    linear-gradient(45deg, transparent 50%, #003333 50%);
+    background-size: 100% 50.1%;
+    background-position: left top, left bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12em;
+    left: 50em;
+    z-index: 8;
+    
+}
+
+#coverUp{
+    width: 4em;
+    height: 4em;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 20.5em;
+    right: 20em;
+    z-index: 6;
+   
+}
+
+#driehoek38{
+    width: 29em;
+    height: 29em;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: #FFF8E4;
+    position: absolute;
+    top: 0em;
+    right: 1em;
+    z-index: 1;
+    
+}
+
+#driehoek39{
+    width: 7em;
+    height: 7em;
+    background-image: repeating-linear-gradient(
+        45deg, 
+        black,
+        black 10px,
+        transparent 7px, 
+        transparent 17px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    position: absolute;
+    top: -2em;
+    right: 36em;
+    z-index: 6;
+}
+
+#driehoek40{
+    width: 14em;
+    height: 14em;
+    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+    background-color: #FFCC33;
+    position: absolute;
+    top: -9.5em;
+    left: 49em;
+    z-index: 2;
+    overflow: hidden;
+    
+    
+}
+
+#secondColor6{
+    width: 12em;
+    height: 12em;
+    clip-path: polygon(50% -8%, 9% 65%, 50% 100%);
+    background-color: #FFCC00;
+    position: absolute;
+    top: 2em;
+    right: 1em;
+    overflow: hidden;
+    
+}
+
+#driehoek41{
+    width: 10em;
+    height: 10em;
+    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+    background-color: #368185;
+    position: absolute;
+    top: 10em;
+    left: 46.5em;
+    z-index: 2;
+}
+
+#driehoek41.expand{
+    animation: move6 3s ease forwards;
+}
+
+@keyframes move6{
+    0%{
+        transform: translate(0,0) rotate(0deg);
+    }
+    20%{
+        transform: translate(2em, 1em);
+    }
+    40%{
+        transform: translate(-20em, 10em) rotate(45deg);
+    }
+    60%{
+        transform: translate(13em, 25em) rotate(900deg);
+    }
+    100%{
+        transform: translate(-16.5em, 5.9em) rotate(135deg);
+        width: 10.3em;
+        height: 10.3em;
+    }
+    
+    
+}
+
+#driehoek42{
+    width: 29em;
+    height: 29em;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-image: linear-gradient(90deg, #FBE9B7 1%, transparent 99% );
+    position: absolute;
+    top: 12em;
+    left: 40em;
+    z-index: -1;
+}
+
+#driehoek43{
+    width: 2em;
+    height: 2em;
+    clip-path: polygon(0 50%, 50% 0, 50% 100%);
+    background-color: #F5C729;
+    position: absolute;
+    top: 6em;
+    right: 38em;
+    z-index: 8;
+}
+
+#driehoek44{
+    width: 15em;
+    height: 15em;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: #FBE9B7;
+    position: absolute;
+    top: -5em;
+    left: 40em;
+}
+
+#secondColor7{
+    width: 2em;
+    height: 2em;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 7em;
+    left: 6em;
+}
+
+#driehoek45{
+    width: 20em;
+    height: 20em;
+    clip-path: polygon(0 103%, 50% 50%, 100% 103%);
+    background-color: #FFFFFF;
+    box-shadow: 0px 13px 12px -10px rgba(0,0,0,0.7);
+    transform: rotate(315deg);
+    position: absolute;
+    bottom: 2em;
+    left: 10em;
+}
